@@ -1651,7 +1651,6 @@ getinput()
      }
 
      // keyboard survey - use to be keytimerstuff() called from keyhandler
-     { extern int misterjoydpadstrafekey; misterjoydpadstrafekey = keys[5]; }   // MiSTer: d-pad left/right strafe (patch_dpadstrafe_game.py)
      if( keystatus[keys[5]] == 0 && strafing == 0 ) {    // Les 09/28/95
           if( keystatus[keys[2]] > 0 || turning == 1) angvel = max(angvel-16*TICSPERFRAME,-128); // Les 09/28/95
           if( keystatus[keys[3]] > 0 || turning == -1) angvel = min(angvel+16*TICSPERFRAME,127); // Les 09/28/95
