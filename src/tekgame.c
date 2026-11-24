@@ -1615,7 +1615,7 @@ getinput()
 #ifdef MISTER_HYBRID
           // MiSTer: the core's eight buttons (joyb bits 2..9: R B A L Y X
           // Select Start) and their actions, in the game's numbering
-          static const int misterjoyactions[8] = { 6, 7, 8, 4, 21, 26, 14, -1 };
+          static const int misterjoyactions[8] = { 6, 8, 7, 4, 21, 26, 14, -1 };
           for(i=0; i<8; i++) {
                int action = misterjoyactions[i];
                if (!(joyb&(4<<i)) || action < 0 || action >= NUMKEYS-1)
